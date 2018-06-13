@@ -1,0 +1,51 @@
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<title>Random Grid</title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+</head>
+<body>
+
+	<center>
+		<div class="container">
+			<h4 style="margin:15px">Random characters generator</h4>
+			<div class="card">
+				<div id="sheet-container">
+					<canvas id="sheet"></canvas>
+				</div>
+				<div class="card-body">
+					<input id="fn" type="text" class="form-control form-control-sm" placeholder="First Name" maxlength="21">
+					<input id="ln" type="text" class="form-control form-control-sm" placeholder="Last Name" maxlength="21">
+					<button id="gen" class="btn btn-info fa fa-refresh"> Generate</button>
+					<button id="shw" class="btn btn-primary fa fa-window-maximize" data-toggle="modal" data-target="#myModal"> Show</button>
+					<a id="dwn" class="btn btn-danger fa fa-download"> Download</a>
+				</div>
+			</div>
+
+			<!-- The Modal -->
+			<div class="modal" id="myModal">
+				<div class="modal-dialog">
+					<img id="preview" src="imgs/bg0.png">
+				</div>
+			</div>
+
+
+		</div>
+	</center>
+
+
+</body>
+</html>
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/fabric.min.js"></script>
+<script src="js/main.js"></script>
